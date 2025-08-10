@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart';
+import 'screens/register_device_screen.dart';
 
 void main() {
-  runApp(const CarTabletAdminApp());
+  runApp(const CarTabletApp());
 }
 
-class CarTabletAdminApp extends StatelessWidget {
-  const CarTabletAdminApp({super.key});
+class CarTabletApp extends StatelessWidget {
+  const CarTabletApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Car Tablet Admin',
+      title: 'Car Tablet MVP',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const LoginScreen(),
+      home: const RegisterDeviceScreen(),
     );
   }
 }
